@@ -23,7 +23,7 @@ for (let i = 0; i < number.length; i++) {
       getFirstValue(atr);
     }
     if (isSecondValue == false) {
-      getFirstValue(atr);
+      getSecondValue(atr);
     }
   });
 }
@@ -37,7 +37,7 @@ function getFirstValue(el) {
 }
 
 function getSecondValue(el) {
-  if (firstValue != "" && sign != "") {
+  if (firstValue != "" && signs != "") {
     secondValue += el;
     result.innerHTML = secondValue;
     secondValue = +secondValue;
@@ -84,7 +84,7 @@ pos_neg.addEventListener("click", () => {
     resultValue = -firstValue;
     firstValue = resultValue;
   }
-  if (firstValue != "" && secondValue != "" && sign != "") {
+  if (firstValue != "" && secondValue != "" && signs != "") {
     resultValue = -resultValue;
   }
   result.innerHTML = resultValue;
@@ -96,7 +96,7 @@ percent.addEventListener("click", () => {
     resultValue = firstValue / 100;
     firstValue = resultValue;
   }
-  if (firstValue != "" && secondValue != "" && sign != "") {
+  if (firstValue != "" && secondValue != "" && signs != "") {
     resultValue = resultValue / 100;
   }
   result.innerHTML = resultValue;
@@ -109,6 +109,6 @@ clear.addEventListener("click", () => {
   isFirstValue = false;
   secondValue = "";
   isSecondValue = false;
-  sign = "";
+  signs = "";
   resultValue = 0;
 });
