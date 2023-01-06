@@ -1,7 +1,7 @@
 //Query selector
 const number = document.querySelectorAll(".number");
 const result = document.querySelector(".result span");
-const sign = document.querySelector(".sign");
+const sign = document.querySelectorAll(".sign");
 const equal = document.querySelector(".equal");
 const clear = document.querySelector(".clear");
 const pos_neg = document.querySelector(".pos_neg");
@@ -48,6 +48,7 @@ function getSign() {
   for (let i = 0; i < sign.length; i++) {
     sign[i].addEventListener("click", (e) => {
       signs = e.target.getAttribute("value");
+      console.log(signs);
       isFirstValue = true;
     });
   }
