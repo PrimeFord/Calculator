@@ -123,12 +123,16 @@ body {
   }
   .container::after {
     width: 30%;
-    top: 96.5%;
+    top: 98%;
     left: 35%;
   }
   .btn {
     font-size: 2.5rem;
     width: 5rem;
     height: 5rem;
+  }
+  .zero {
+    width: 9rem;
+    grid-column: span 2;
   }
 }
