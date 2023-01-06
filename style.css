@@ -106,5 +106,23 @@ body {
   grid-column: span 2;
   border: none;
 }
-@media screen() {
+@media (max-width: 640px) {
+  :root {
+    font-size: 16px;
+  }
+  .container {
+    height: 100%;
+    width: 100%;
+    border: 0.8rem solid black;
+  }
+  .container::before {
+    width: 40%;
+    left: 30%;
+    top: 0.7rem;
+  }
+  .container::after {
+    width: 30%;
+    top: 96.5%;
+    left: 35%;
+  }
 }
