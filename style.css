@@ -119,10 +119,16 @@ body {
     width: 40%;
     left: 30%;
     top: 0.7rem;
+    height: 2rem;
   }
   .container::after {
     width: 30%;
     top: 96.5%;
     left: 35%;
+  }
+  .btn {
+    font-size: 3rem;
+    width: 6rem;
+    height: 6rem;
   }
 }
